@@ -7,13 +7,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/products/search")
 @RequiredArgsConstructor
 public class ProductSearchController {
 
     private final ProductSearchService service;
 
-    @GetMapping("/search")
+    @GetMapping
     public Page<ProductSearch> search(
             @RequestParam(required = false) String search,
             @RequestParam(required = false) String brand,
