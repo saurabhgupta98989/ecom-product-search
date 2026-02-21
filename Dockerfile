@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copy jar
-COPY target/ecom-product-service-*.jar app.jar
+COPY target/ecom-product-search-*.jar app.jar
 
 # Expose port
 EXPOSE 8080
