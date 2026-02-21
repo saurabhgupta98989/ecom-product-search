@@ -30,8 +30,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/user-service:latest .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ecom-product-search-service:latest .
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/user-service:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/ecom-product-search-service:latest
