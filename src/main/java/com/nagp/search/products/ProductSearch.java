@@ -1,11 +1,13 @@
 package com.nagp.search.products;
 
+import lombok.Builder;
 import lombok.Data;
 import java.time.Instant;
 import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.*;
 
+@Builder
 @Data
 @Document(indexName = "product_search")
 public class ProductSearch {
