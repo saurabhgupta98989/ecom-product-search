@@ -59,4 +59,9 @@ public class ProductSearchController {
         service.delete(id);
     }
 
+    @DeleteMapping("/all")
+    public void deleteAll() {
+        service.deleteAll();
+    }
+
 }

@@ -45,13 +45,13 @@ public class ProductSearch {
     private List<String> availableSizes;
 
     @Field(type = FieldType.Double)
-    private double price;
+    private Double price;
 
     @Field(type = FieldType.Float)
-    private float rating;
+    private Float rating;
 
     @Field(type = FieldType.Integer)
-    private int salesCount;
+    private Integer salesCount;
 
     @Field(type = FieldType.Boolean)
     private Boolean inStock;

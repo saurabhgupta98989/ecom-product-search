@@ -121,6 +121,10 @@ public class ProductSearchService {
         repository.deleteById(id);
     }
 
+    public void deleteAll() {
+        repository.deleteAll();
+    }
+
     public void patchUpdate(String id, Map<String,Object> updates) {
         Document document = Document.from(updates);
         UpdateQuery query = UpdateQuery.builder(id)
